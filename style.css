@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f1faee;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container {
+  background: white;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 10px hsl(0, 0%, 50%);
+  margin: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  color: #e63946;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+#start-screen p {
+  color: #4a4e69;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  background: hsl(355, 78%, 66%);
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.screen {
+  display: none;
+}
+.screen.active {
+  display: block;
+}
+
+.quiz-info {
+  display: flex;
+  justify-content: space-between;
+  color: #4a4e69;
+  padding: 0.5rem;
+}
+
+#answers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.answer-btn {
+  text-align: left;
+  padding: 1rem;
+  background: hsl(19, 100%, 93%);
+  border: hsl(19, 100%, 83%);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.answer-btn:hover {
+  background: hsl(19, 100%, 73%);
+}
+.answer-btn.correct {
+  background-color: hsl(182, 43%, 76%);
+  border-color: hsl(182, 43%, 66%);
+  /* color: hsl(182, 61%, 61%); */
+}
+.answer-btn.incorrect {
+  background-color: hsl(355, 78%, 76%);
+  border-color: hsl(355, 78%, 76%);
+  color: #e63946;
+}
+
+.progress-bar {
+  background-color: hsl(19, 100%, 93%);
+  overflow: hidden;
+  height: 10px;
+  margin-top: 1.5rem;
+  border-radius: 5px;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background-color: hsl(19, 100%, 53%);
+  transition: width 0.3s ease;
+}
+
+.result-info {
+  padding: 2rem;
+  background: hsl(19, 100%, 93%);
+  border-radius: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#result-msg {
+  color: #e63946;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1rem;
+}
