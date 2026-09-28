@@ -84,7 +84,7 @@ quiz-app
 
 Live Demo: https://jaima-konia.github.io/Quiz-/
 
-JavaScript Concepts Practiced
+**JavaScript Concepts Practiced**
 
 This project helped me practice several important JavaScript concepts:
 
